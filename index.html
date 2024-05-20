@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/> <!--added a css file for text styling-->
 </head>
 <body>
     <div class="container-fluid"> <!--Top row containing Instagram icon and dropdown menus-->
@@ -31,8 +31,8 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="mb-3"> <!--spacing added to the bottom here for styling-->
-                                        <label for="recipient-name" class="col-form-label">Caption:</label>
-                                        <textarea class="form-control" aria-label="textarea" placeholder="Add the caption of your post here"></textarea>
+                                        <label for="text-area" class="col-form-label">Caption:</label>
+                                        <textarea id="text-area" class="form-control" aria-label="textarea" placeholder="Add the caption of your post here"></textarea>
                                     </div>
                                 </div>
                                 <div class="modal-footer"> <!--header, body, and footer have automatic styling with dividing lines-->
@@ -109,54 +109,54 @@
         </div>
         <!--Everything that shows up with the square icon is selected-->
         <div class="tab-pane fade" id="pills-view"> <!--fade doesn't seem necessary-->
-            <div class="container-fluid col-5"> <!--Setting the size of the single column of pictures-->
-                <div class="row border container-fluid mb-4 justify-content-center"> <!--This is where I would expect to remove padding, but it doesn't change anything. :/ -->
-                    <div class="row container-fluid mt-1"> 
-                        <div class="col text-start"> <!--text-start pushes the text to the left (the start)-->
+            <div class="container-fluid col-8 px-0"> <!--Setting the size of the single column of pictures-->
+                <div class="col-12 border mb-4 justify-content-center"> <!--Changing the class from row to col solved a whitespace issues around my divs:/ -->
+                    <div class="row justify-content-between container-fluid mt-1"> 
+                        <div class="col-9 text-start px-0"> <!--text-start pushes the text to the left (the start)-->
                             <strong class="fs-6">My Crazy Dog Spark!</strong>
                         </div>
-                        <div class="col text-end"> <!--text-end pushes the text to the right (the end)-->
+                        <div class="col-1 text-end"> <!--text-end pushes the text to the right (the end)-->
                             08/26
                         </div>
                     </div>
                     <div class="row">
-                        <img src="Picture1.png" alt="Cute picture of my dog Spark">
+                        <img src="Picture1-cropped.png" alt="Cute picture of my dog Spark">
                     </div>
-                    <div class="row">
+                    <div class="row px-2">
                         <strong>204 Likes</strong>
                         <p class="roboto-regular">This is an example of a very good photo that you can post on Instagram</p>
                     </div>
                 </div>
-                <div class="row border mb-4 justify-content-center">
+                <div class="col-12 border mb-4 justify-content-center">
                     <div class="row container-fluid mt-1"> 
-                        <div class="col text-start">
+                        <div class="col-11 text-start px-0">
                             <strong>The greatness of Croatia</strong>
                         </div>
-                        <div class="col text-end">
+                        <div class="col-1 text-end">
                             04/09
                         </div>
                     </div>
                     <div class="row">
-                        <img src="Picture3.png" alt="Aerial picture of Croatia">
+                        <img src="Picture3-cropped.png" alt="Aerial picture of Croatia">
                     </div>
-                    <div class="row">
+                    <div class="row px-2">
                         <strong>26985 Likes</strong>
                         <p class="roboto-regular">This is another example of a photo that you can post on Instagram</p>
                     </div>
                 </div>
-                <div class="row border mb-4 justify-content-center">
+                <div class="col-12 border mb-4 justify-content-center">
                     <div class="row container-fluid mt-1"> 
-                        <div class="col-9 text-start">
+                        <div class="col-11 text-start px-0">
                             <strong>Amazing GOAL by Cristiano!</strong>
                         </div>
-                        <div class="col text-end">
+                        <div class="col-1 text-end">
                             06/10
                         </div>
                     </div>
                     <div class="row">
-                        <img src="Picture6.png" alt="Picture of an epic goal scored by Cristiano">
+                        <img src="Picture6-cropped.png" alt="Picture of an epic goal scored by Cristiano">
                     </div>
-                    <div class="row">
+                    <div class="row px-2">
                         <strong>63542 Likes</strong>
                         <p class="roboto-regular">Look at this guy! Wow!!</p>
                     </div>
